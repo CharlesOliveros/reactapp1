@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import FeedbackMessage from './FeedbackMessage'
+
 
 class App extends Component {
   render() {
@@ -7,6 +9,7 @@ class App extends Component {
         <h1>Hola Mundo!</h1>
         <p>Bienvenidos a los primeros pasos con React</p>
         <OtroSaludo />
+        <FeedbackMessage />
       </div>
     );
   }
