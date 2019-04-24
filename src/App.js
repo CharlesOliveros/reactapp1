@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FeedbackMessage from './FeedbackMessage'
 import FeedbackMessageFunction from './FeedbackMessageFunction'
+import TimestampToDate from './TimestampToDate'
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         <FeedbackMessage />
         <FeedbackMessage nombre="Charles Oliveros" app="Mi App React" />
         <FeedbackMessageFunction nombre="Charles Oliveros" app="Mi App React" />
+        <TimestampToDate timestamp={1475700297974} />
       </div>
     );
   }
