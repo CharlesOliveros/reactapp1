@@ -45,6 +45,11 @@ export default class CicloVida extends React.Component {
     })
   }
 
+  mostrarAlerta(e) {
+    e.preventDefault();
+    alert('Has hecho clic!!');
+  }
+
   render() {
     return (
       <div>
@@ -53,7 +58,8 @@ export default class CicloVida extends React.Component {
         <p>Estado: {this.state.estado}</p>
         <p>Propiedad: {this.props.propiedad}</p>
         <p>
-            <button onClick={this.cambiarEstado.bind(this)}>Cambiar estado</button>
+            <button onClick={this.cambiarEstado.bind(this)}>Cambiar estado </button> 
+            <button onClick={this.mostrarAlerta}> Mostrar Alerta </button>
         </p>
       </div>
     )
@@ -63,6 +69,13 @@ export default class CicloVida extends React.Component {
 CicloVida.defaultProps = {
   propiedad: 'Valor por defecto definido para la propiedad'
 }
+
+/**
+ * Bindear funcion:
+ * Permite acceder a las propiedades y estado de un componnete desde una
+ * funcion del mismo:
+ *  onClick={this.cambiarEstado.bind(this)}
+ */
 
 /**
  * CicloVida.defaultProps:
