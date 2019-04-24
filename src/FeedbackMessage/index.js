@@ -4,7 +4,7 @@ class FeedbackMessage extends Component {
     render() {
         return (
             <div>
-                <h1>Bienvenido a FeedbackMessage!</h1>
+                <h1>Componente FeedbackMessage!</h1>
                 <p>
                     Soy un componente generado a partir de una clase!.
                 </p>

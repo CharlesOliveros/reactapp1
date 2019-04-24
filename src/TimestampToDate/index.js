@@ -16,7 +16,7 @@ export default function (props) {
     var fecha = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
     return (
         <div>
-            <h1>Bienvenido a TimestampToDate!</h1>
+            <h1>Componente TimestampToDate!</h1>
             <span>{fecha}</span>
         </div>
     );

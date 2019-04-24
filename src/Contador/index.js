@@ -51,7 +51,7 @@ export default class Contador extends React.Component {
   render() {
     return (
       <div>
-        <h1>Bienvenido a Contador!</h1>
+        <h1>Componente Contador!</h1>
         <span>Cuenta actual: {this.state.contador} </span> 
         <button onClick={this.incrementarprevState.bind(this)}> + </button>
       </div>

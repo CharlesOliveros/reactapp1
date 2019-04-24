@@ -3,6 +3,7 @@ import FeedbackMessage from './FeedbackMessage'
 import FeedbackMessageFunction from './FeedbackMessageFunction'
 import TimestampToDate from './TimestampToDate'
 import Contador from './Contador'
+import CicloVida from './CicloVida'
 
 
 
@@ -21,6 +22,7 @@ class App extends Component {
         <FeedbackMessageFunction nombre="Charles Oliveros" app="Mi App React" />
         <TimestampToDate timestamp={1475700297974} />
         <Contador />
+        <CicloVida />
       </div>
     );
   }
