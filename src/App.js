@@ -8,7 +8,10 @@ class App extends Component {
     return (
       <div>
         <h1>Hola Mundo!</h1>
-        <p>Bienvenidos a los primeros pasos con React</p>
+        <p>
+          Soy el componente  principal App.js,
+          Bienvenidos a los primeros pasos con React.
+        </p>
         <OtroSaludo />
         <FeedbackMessage />
         <FeedbackMessage nombre="Charles Oliveros" app="Mi App React" />
@@ -21,7 +24,13 @@ class App extends Component {
 class OtroSaludo extends Component {
   render() {
     return (
-      <p>Hola desde otro componente</p>
+      <div>
+        <h1>Bienvenido a OtroSaludo!</h1>
+          <p>
+            Soy otro componente generado a partir de una clase, definido dentro 
+            del componente principal App.js
+          </p>
+      </div>
     )
   }
 }

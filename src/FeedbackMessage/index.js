@@ -4,8 +4,17 @@ class FeedbackMessage extends Component {
     render() {
         return (
             <div>
-                Bienvenido a FeedbackMessage!, soy un componente de Clase! <br/>
-                Bienvenido! {this.props.nombre} a {this.props.app}<br/><br/>
+                <h1>Bienvenido a FeedbackMessage!</h1>
+                <p>
+                    Soy un componente generado a partir de una clase!.
+                </p>
+                <p>
+                    Fui creado en un modulo aparte y accedo a mis propiedades con "this.props".
+                </p>
+                <p>
+                    Mis propiedades son "nombre" y "app", y las imprimo en el siguiente parrafo:
+                </p>
+                <p>Bienvenido! {this.props.nombre} a {this.props.app}</p>
             </div>
         )
     } 
