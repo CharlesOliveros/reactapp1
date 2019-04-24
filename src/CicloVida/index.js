@@ -26,6 +26,7 @@ CicloVida.defaultProps = {
 }
 
 /**
+ * CicloVida.defaultProps:
  * la inicialización de propiedades se hace una vez definida la clase, 
  * mediante una propiedad que usamos dentro de la propia clase. 
  * Al no estar en el código de la clase, se ejecutará una única vez.
