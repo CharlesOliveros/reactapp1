@@ -5,7 +5,8 @@ export default class CicloVida extends React.Component {
     super(...args)
     console.log('Ejecuto constructor', ...args)
     this.state = {
-      estado: 'Inicializado en el constructor'
+      estado: 'Inicializado en el constructor',
+      showTitle: true
     }
   }
 
@@ -45,6 +46,12 @@ export default class CicloVida extends React.Component {
     })
   }
 
+  mostrarTitulo() {
+    this.setState(prevState => {
+      return { showTitle: !prevState.showTitle };
+    });
+  }
+
   mostrarAlerta(e) {
     e.preventDefault();
     alert('Has hecho clic!!');
@@ -53,13 +60,17 @@ export default class CicloVida extends React.Component {
   render() {
     return (
       <div>
-        <h1>Componente CicloVida</h1>
+        { this.state.showTitle 
+            ? <h1>Componente CicloVida</h1>
+            : <h1>---</h1>
+        }
         <p>Componente con propiedades y estado inicializado</p>
         <p>Estado: {this.state.estado}</p>
         <p>Propiedad: {this.props.propiedad}</p>
         <p>
             <button onClick={this.cambiarEstado.bind(this)}>Cambiar estado </button> 
             <button onClick={this.mostrarAlerta}> Mostrar Alerta </button>
+            <button onClick={this.mostrarTitulo.bind(this)}> Mostrar Titulo </button>
         </p>
       </div>
     )
