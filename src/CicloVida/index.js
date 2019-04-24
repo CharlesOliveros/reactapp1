@@ -9,6 +9,42 @@ export default class CicloVida extends React.Component {
     }
   }
 
+  componentWillMount() {
+    console.log('Se ejecuta componentWillMount')
+  }
+
+  componentDidMount() {
+    console.log('Se ejecuta componentDidMount')
+  }
+
+  componentWillReceiveProps(nextProps) {
+    console.log('Se ejecuta componentWillReceiveProps con las propiedades futuras', nextProps)
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log('Ejecutando shouldComponentUpdate. Próximas propiedades y estado: ', nextProps, nextState)
+    // debo devolver un boleano
+    return true
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    console.log('Ejecutando componentWillUpdate. Próximas propiedades y estado: ', nextProps, nextState)
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log('Ejecutando componentDidUpdate. Anteriores propiedades y estado: ', prevProps, prevState)    
+  }
+
+  componentWillUnmount() {
+    console.log('Se desmonta el componente...')
+  }
+
+  cambiarEstado() {
+    this.setState({
+      estado: 'Otro valor para "estado"'
+    })
+  }
+
   render() {
     return (
       <div>
@@ -16,6 +52,9 @@ export default class CicloVida extends React.Component {
         <p>Componente con propiedades y estado inicializado</p>
         <p>Estado: {this.state.estado}</p>
         <p>Propiedad: {this.props.propiedad}</p>
+        <p>
+            <button onClick={this.cambiarEstado.bind(this)}>Cambiar estado</button>
+        </p>
       </div>
     )
   }

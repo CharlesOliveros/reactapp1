@@ -23,6 +23,7 @@ class App extends Component {
         <TimestampToDate timestamp={1475700297974} />
         <Contador />
         <CicloVida />
+        <CicloVida propiedad="Propiedad inicializada desde la instancia!"/>
       </div>
     );
   }
