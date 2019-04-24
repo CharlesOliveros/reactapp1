@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FeedbackMessage from './FeedbackMessage'
+import FeedbackMessageFunction from './FeedbackMessageFunction'
 
 
 class App extends Component {
@@ -10,7 +11,8 @@ class App extends Component {
         <p>Bienvenidos a los primeros pasos con React</p>
         <OtroSaludo />
         <FeedbackMessage />
-        <FeedbackMessage nombre="Miguel Angel Alvarez" app="Mi App React" />
+        <FeedbackMessage nombre="Charles Oliveros" app="Mi App React" />
+        <FeedbackMessageFunction nombre="Charles Oliveros" app="Mi App React" />
       </div>
     );
   }
