@@ -1,0 +1,14 @@
+.Badge {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 11px;
+    padding: 4px;
+  }
+  
+  .Badge-completed {
+    color: green;
+  }
+  
+  .Badge-incompleted {
+    color: red;
+  }

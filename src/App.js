@@ -4,7 +4,7 @@ import FeedbackMessageFunction from './FeedbackMessageFunction'
 import TimestampToDate from './TimestampToDate'
 import Contador from './Contador'
 import CicloVida from './CicloVida'
-
+import CompletedBadge from './CompletedBadge'
 
 
 class App extends Component {
@@ -24,6 +24,8 @@ class App extends Component {
         <Contador />
         <CicloVida />
         <CicloVida propiedad="Propiedad inicializada desde la instancia!"/>
+        <CompletedBadge completed/>
+        <CompletedBadge />
       </div>
     );
   }
