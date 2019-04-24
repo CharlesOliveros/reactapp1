@@ -4,7 +4,8 @@ class FeedbackMessage extends Component {
     render() {
         return (
             <div>
-                Bienvenido a FeedbackMessage!
+                Bienvenido a FeedbackMessage! <br/>
+                Bienvenido! {this.props.nombre} a {this.props.app}<br/><br/>
             </div>
         )
     } 

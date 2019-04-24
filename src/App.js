@@ -10,6 +10,7 @@ class App extends Component {
         <p>Bienvenidos a los primeros pasos con React</p>
         <OtroSaludo />
         <FeedbackMessage />
+        <FeedbackMessage nombre="Miguel Angel Alvarez" app="Mi App React" />
       </div>
     );
   }
