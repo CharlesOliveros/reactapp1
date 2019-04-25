@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+import RepeatComponentItem from '../RepeatComponentItem'
 
-class RepeatComponent extends Component {
+class RepeatComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
@@ -9,9 +10,18 @@ class RepeatComponent extends Component {
   }
   render() { 
     return (
-      <ul>
-        {this.state.lenguajes.map(item => <li>{item}</li>)}
-      </ul>
+      <div>
+        <h1>Componente con Repeticiones</h1>
+        <ul>
+            {this.state.lenguajes.map(item => <li>{item}</li>)}
+        </ul>
+        <br/>
+        {
+            this.state.lenguajes.map(
+                (item,index) => <RepeatComponentItem key={index} item={item}/>
+            )
+        }
+      </div>
     );
   }
 }
