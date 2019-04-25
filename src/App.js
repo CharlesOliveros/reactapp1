@@ -5,7 +5,7 @@ import TimestampToDate from './TimestampToDate'
 import Contador from './Contador'
 import CicloVida from './CicloVida'
 import CompletedBadge from './CompletedBadge'
-
+import RepeatComponent from './RepeatComponent'
 
 class App extends Component {
   render() {
@@ -26,6 +26,7 @@ class App extends Component {
         <CicloVida propiedad="Propiedad inicializada desde la instancia!"/>
         <CompletedBadge completed/>
         <CompletedBadge />
+        <RepeatComponent />
       </div>
     );
   }
